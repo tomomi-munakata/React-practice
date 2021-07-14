@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './views/App';
+// import FrontC from './frontC';
+// import GetData from './GetData';
+
+// import { Router } from 'react-router-dom';
+// import { createBrowserHistory } from "history";
+
+// const hist = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode>  
     <App />
-  </React.StrictMode>,
+   </React.StrictMode>,
   document.getElementById('root')
 );
 
