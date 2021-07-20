@@ -1,0 +1,30 @@
+.main-visual {
+    margin-top: -40px;
+    display: flex;
+    background-image: url(../images/main.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    text-align: center;
+  }
+  .main-visual-inner {
+    padding: 0 40px;
+  }
+  .main-visual-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    letter-spacing: .1em;
+  }
+  .main-visual-subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+    line-height: 1;
+    margin-bottom: 40px;
+    letter-spacing: .08em;
+  }

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom'
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import {Link, MemoryRouter} from 'react-router-dom';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -16,13 +16,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import SlideshowIcon from '@material-ui/icons/Slideshow';
-import CreateIcon from '@material-ui/icons/Create';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import PersonIcon from '@material-ui/icons/Person';
+import CollectionsIcon from '@material-ui/icons/Collections';
 import AppsIcon from '@material-ui/icons/Apps';
-
-import Slide from './Slide';
-import CounterApp from './CounterApp'
-import taskBoard from './taskBoard2';
+import BorderColorIcon from '@material-ui/icons/BorderColor';
 
 const drawerWidth = 240;
 
@@ -86,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
 export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -116,7 +114,7 @@ export default function PersistentDrawerLeft() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            仮ヘッダー
+            TOMOMI MUNAKATA
           </Typography>
         </Toolbar>
       </AppBar>
@@ -136,28 +134,53 @@ export default function PersistentDrawerLeft() {
         </div>
         <Divider />
         <List>
-            <Link to="/slide" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat,sans-serif'}}>
-            　<ListItem button>
-                <ListItemIcon><AppsIcon /></ListItemIcon>
-                <ListItemText primary="メニュー" />
-            </ListItem>
-            </Link>
+          <MemoryRouter>  
+            <Link to ="/" style={{boxShadow:'none',textDecoration:'none',color:'inherit'}}>
+               <ListItem button>
+                 <ListItemIcon><AppsIcon /></ListItemIcon> 
+                 <ListItemText primary="HOME" />
+               </ListItem>
+           </Link>
+          </MemoryRouter>
         </List>
-        <Divider />
+      <Divider />
         <List>
-            <Link to="/slide" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat,sans-serif'}}>
-                <ListItem button>
-                    <ListItemIcon><SlideshowIcon /></ListItemIcon>
-                    <ListItemText primary="個人情報研修" />
-                </ListItem>
-                </Link>
-                <Link to="/taskboard" style={{boxShadow:'none',textDecoration:'none',color:'inherit',fontFamily:'Montserrat,sans-serif'}}>
-                <ListItem button>
-                    <ListItemIcon><CreateIcon /></ListItemIcon>
-                    <ListItemText primary="個人情報テスト" />
-                </ListItem>
-              </Link>
-            </List>
+          <MemoryRouter>
+            <Link to="Work.jsx" style={{boxShadow:'none',textDecoration:'none',color:'inherit'}}> 
+              <ListItem button>
+                <ListItemIcon><CollectionsIcon /></ListItemIcon>
+                <ListItemText primary="WORK" />
+              </ListItem>
+            </Link> 
+          </MemoryRouter>
+
+          <MemoryRouter>
+            <Link to ="Skill.jsx" style={{boxShadow:'none',textDecoration:'none',color:'inherit'}}>
+              <ListItem button>
+                <ListItemIcon><BorderColorIcon /></ListItemIcon>
+                <ListItemText primary="SKILL" />
+              </ListItem>
+            </Link>
+          </MemoryRouter>
+
+          <MemoryRouter>
+            <Link to ="About.jsx" style={{boxShadow:'none',textDecoration:'none',color:'inherit'}}>
+              <ListItem button>
+                <ListItemIcon><PersonIcon /></ListItemIcon>
+                <ListItemText primary="ABOUT" />
+              </ListItem>
+            </Link>
+          </MemoryRouter>
+
+          <MemoryRouter>
+            <Link to="Contact.jsx" style={{boxShadow:'none',textDecoration:'none',color:'inherit'}}>
+              <ListItem button>
+                <ListItemIcon><ContactMailIcon /></ListItemIcon>
+                <ListItemText primary="CONTACT" />
+              </ListItem>
+            </Link>
+          </MemoryRouter>
+        </List> 
       </Drawer>
       <main
         className={clsx(classes.content, {
@@ -165,8 +188,12 @@ export default function PersistentDrawerLeft() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Route path="/slide" component={Slide} />
-        <Route path="/taskboard" component={taskBoard} />
+        <Typography paragraph>
+
+        </Typography>
+        
+        <Typography paragraph>
+        </Typography>
       </main>
     </div>
   );

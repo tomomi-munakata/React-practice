@@ -2,23 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './views/App';
-// import FrontC from './frontC';
-// import GetData from './GetData';
-
-// import { Router } from 'react-router-dom';
-// import { createBrowserHistory } from "history";
-
-// const hist = createBrowserHistory();
+import Menu from './components/Menu';
+import Home from './components/Home';
+import Work from './components/Work';
+import Skill from './components/Skill.jsx';
+import About from './components/About';
+import Contact from './components/Contact'
 
 ReactDOM.render(
-  <React.StrictMode>  
-    <App />
-   </React.StrictMode>,
+   <React.StrictMode>  
+   <Menu />
+   <Home />
+   <Work />
+   <Skill />
+   <About />
+   <Contact />
+  </React.StrictMode>,
+
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

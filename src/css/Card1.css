@@ -1,0 +1,36 @@
+.card1 {
+    width: 900px;
+    height: 520px;
+    margin-bottom: 16px;
+    /* border-radius: 20px; */
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.04);  
+  }
+  .card1__link {
+    text-decoration: none;
+  }
+  
+  .card1__img {
+    width: 900px;
+    height: 520px;
+    /* border-radius: 20px 20px 0 0; */
+    object-fit: cover;
+  }
+  
+  .card1__content {
+    height: 120px;
+    width: 100%;
+    color: #707070;
+  }
+  .card1__title {
+    text-align: center;
+    font-size: 24px;
+    margin: 18px 0;
+  }
+  
+  .card1__lead {
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  

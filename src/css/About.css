@@ -1,0 +1,62 @@
+ .about{
+    margin-top: 40px;
+} 
+  .about__container {
+    margin-bottom: 400px;
+  }
+  
+  .about__container:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .about__title {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .about__container__head {
+    background-color: rgb(252, 252, 252);
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #333;
+  }
+  
+  .about_cards {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    left: 32px;
+  }
+  
+  .about_item{
+      text-align: center;
+      font-weight: bold;
+      color: grey;
+  }
+
+  @media screen and (max-width: 992px) {
+    .about__container__head {
+      position: static;
+      float: none;
+      transform:rotate(0deg);
+    }
+  
+    .about__container {
+      margin-bottom: 40px;
+    }
+  
+    .cards {
+      display: block;
+      width: fit-content;
+    }
+  }
