@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Work from './components/Work';
 import Skill from './components/Skill.jsx';
 import About from './components/About';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
 
 ReactDOM.render(
    <React.StrictMode>  

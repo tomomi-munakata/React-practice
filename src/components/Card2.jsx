@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/Card.css'
+import '../css/Card2.css'
 
-class Card5 extends React.Component {
+class Card2 extends React.Component {
   render(){
     return(
       <a href={this.props.link} className="card__link">
@@ -26,4 +26,4 @@ class Card5 extends React.Component {
 }
 
 
-export default Card5;
+export default Card2;

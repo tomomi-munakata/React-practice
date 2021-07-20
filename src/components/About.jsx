@@ -1,5 +1,5 @@
 import React from 'react'
-import Card4 from './Card4'
+import Card3 from './Card3'
 import '../css/About.css';
 
 
@@ -11,7 +11,7 @@ class About extends React.Component {
           <div className="about__container">
           <div className="about__container__head">ABOUT</div>
             <div className="about_cards">
-              <Card4 />
+              <Card3 />
             </div>
             <div className="about_item">
                 <p>
