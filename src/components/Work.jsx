@@ -12,7 +12,7 @@ class Work extends React.Component {
           <div className="work__container">
             <div className="work__container__head ">WORK</div>
             <div className="work_cards">
-              <Card1 img={works} title="Portfolio(このサイト)　Cording/Design"  lead="1ページで全ての情報が得られるようにしました。"/>
+              <Card1 img={works} title="Portfolio(このサイト)　Cording/Design"  lead="1ページで全ての情報が得られるようにしました。" />
             </div>
           </div>
         </div>

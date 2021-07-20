@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Card1.css'
 
-class Card6 extends React.Component {
+class Card1 extends React.Component {
   render(){
     return(
       <a href={this.props.link} className="card1__link">
@@ -26,4 +26,4 @@ class Card6 extends React.Component {
 }
 
 
-export default Card6;
+export default Card1;

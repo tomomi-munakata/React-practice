@@ -4,7 +4,7 @@ import '../css/Home.css'
 class Home extends React.Component {
     render(){
       return(
-        <div  className="wrapper">
+        <div  className="Home">
         <div className="main-visual">
         <div className="main-visual-inner">
         <div className="main-visual-title">TOMOMI MUNAKATA</div>
